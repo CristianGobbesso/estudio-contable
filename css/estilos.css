@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&family=Roboto:ital@1&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: azure;
+}
+
+body {
+    background-color: cornsilk;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+}
+
+span {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.color {
+    color: azure;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    letter-spacing: 4px;
+}
+
+p,
+li,
+.flex1 {
+    line-height: 50px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 4px;
+    word-spacing: 5px;
+}
+
+header {
+    background-color: rgb(50, 59, 59);
+    padding: 10px;
+    border-bottom: 4px solid black;
+    border-top: 4px solid black;
+}
+
+.logo {
+    border: 2px solid rgb(194, 192, 192);
+    border-radius: 2px;
+    height: 100%
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.imp {
+    grid-area: imp;
+}
+
+.grosor {
+    grid-area: datos;
+    font-size: 30px;
+}
+
+.titulo {
+    grid-area: titulo;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ima {
+    grid-area: ima;
+    height: 100%;
+    width: 100%;
+    border-radius: 2px;
+
+}
+
+.tam2 {
+    grid-area: tam2;
+    border-radius: 4px;
+    padding: 60px 20px 0px 20px;
+}
+
+.redes {
+    grid-area: redes;
+}
+
+.legal {
+    grid-area: legal;
+}
+
+.flex__conteiner {
+    height: 64vh;
+    display: grid;
+    grid-template-areas:
+        "logo"
+        "imp"
+        "datos";
+    justify-items: center;
+    align-items: center;
+}
+
+.flex__conteiner2 {
+    background-color: cornsilk;
+    height: 80vh;
+    display: grid;
+    grid-template-areas:
+        "titulo"
+        "ima"
+        "tam2";
+}
+
+footer {
+    height: 85px;
+    margin-top: 4rem;
+    border-bottom: 4px solid black;
+    border-top: 4px solid black;
+    background-color: rgb(47, 52, 52);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.formu {
+    padding: 30px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding-bottom: 150px;
+    padding-top: 89px;
+}
+
+
+@media (min-width:500px) {
+
+    nav ul {
+        word-spacing: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    .flex__conteiner {
+        height: 80vh;
+    }
+
+    .form_box {
+        height: 73vh;
+        padding: 30px;
+
+    }
+    .titulo {
+        padding: 30px;
+    }
+
+    footer {
+        display: grid;
+        grid-template-areas: "redes redes legal legal";
+        justify-content: space-between;
+        align-items: center;
+        justify-items: stretch;
+    }
+}
+
+@media (min-width:768px) {
+    .flex__conteiner {
+        height: 73vh;
+        display: grid;
+        grid-template-areas:
+            "logo"
+            "imp"
+            "datos";
+        justify-items: center;
+        align-items: center;
+    }
+
+    .flex__conteiner2 {
+        background-color: cornsilk;
+        height: 90vh;
+        display: grid;
+        grid-template-areas:
+            "titulo"
+            "ima"
+            "tam2";
+        justify-items: center;
+        align-items: center;
+    }
+
+    .flex__conteiner3 {
+        background-color: cornsilk;
+        height: 128vh;
+        display: grid;
+        grid-template-areas:
+            "titulo"
+            "ima"
+            "tam3";
+        justify-items: center;
+        align-items: center;
+    }
+    .tam3{
+        margin-top:35px ;
+        }
+    .foot{
+        margin-top: 310px;
+        
+    }
+    footer {
+        height: 85px;
+        margin-top: 87px;
+        border-bottom: 4px solid black;
+        border-top: 4px solid black;
+        background-color: rgb(50, 59, 59);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .shad:hover {
+        box-shadow: 0rem 0.1rem 0.4rem rgba(0, 0, 0, 0.9);
+        transition: 0.3s ease;
+    }
+
+    .box1:hover {
+        transition: all 4s;
+        transform: scale(2) rotate(360deg);
+    }
+
+    .box:hover {
+        transform: scale(1.5) translatey(-100px);
+        background-color: cornsilk;
+    }
+
+    .box {
+        transition-property: all;
+        transition-duration: 3s;
+    }
+
+    .box2:hover {
+        transform: scale(1) translatey(-200px);
+        background-color: cornsilk;
+    }
+
+    .box2 {
+        transition-property: all;
+        transition-duration: 3s;
+    }
+}
