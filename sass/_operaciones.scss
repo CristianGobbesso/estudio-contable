@@ -1,0 +1,15 @@
+@mixin sizes ($height, $width){
+    height: $height;
+    width: $width;
+}
+.ima{
+    @include sizes (100% , 100%);
+    border-radius: 2px;
+    grid-area: ima;
+}
+@mixin color_fondo ($background-color){
+    color:$background-color;
+}
+footer{
+    @include color_fondo ( rgb(47, 52, 52));
+}

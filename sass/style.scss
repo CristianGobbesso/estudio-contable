@@ -1,42 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&family=Roboto:ital@1&display=swap');
+@import "operaciones";
+@import "variableGlobal";
+@import "general";
+@import "flex";
 
-* {
-    padding: 0;
-    margin: 0;
-}
-
-ul li {
-    list-style-type: none;
-}
-
-a {
-    text-decoration: none;
-    color: azure;
-}
-
-body {
-    background-color: cornsilk;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bolder;
-}
-
-span {
-    font-size: 20px;
-    text-transform: uppercase;
-}
-
-.color {
-    color: azure;
-}
-
-h1 {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 35px;
-    letter-spacing: 4px;
-}
 
 p,
 li,
@@ -47,30 +13,8 @@ li,
     word-spacing: 5px;
 }
 
-header {
-    background-color: rgb(50, 59, 59);
-    padding: 10px;
-    border-bottom: 4px solid black;
-    border-top: 4px solid black;
-}
-
-.logo {
-    border: 2px solid rgb(194, 192, 192);
-    border-radius: 2px;
-    height: 100%
-}
-
-.logo {
-    grid-area: logo;
-}
-
 .imp {
     grid-area: imp;
-}
-
-.grosor {
-    grid-area: datos;
-    font-size: 30px;
 }
 
 .titulo {
@@ -90,7 +34,6 @@ header {
     border-radius: 2px;
 
 }
-
 .tam2 {
     grid-area: tam2;
     border-radius: 4px;
@@ -103,17 +46,6 @@ header {
 
 .legal {
     grid-area: legal;
-}
-
-.flex__conteiner {
-    height: 64vh;
-    display: grid;
-    grid-template-areas:
-        "logo"
-        "imp"
-        "datos";
-    justify-items: center;
-    align-items: center;
 }
 
 .flex__conteiner2 {
@@ -158,7 +90,6 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-
     }
 
     .flex__conteiner {
@@ -168,8 +99,8 @@ footer {
     .form_box {
         height: 73vh;
         padding: 30px;
-
     }
+
     .titulo {
         padding: 30px;
     }
@@ -218,13 +149,15 @@ footer {
         justify-items: center;
         align-items: center;
     }
-    .tam3{
-        margin-top:35px ;
-        }
-    .foot{
-        margin-top: 310px;
-        
+
+    .tam3 {
+        margin-top: 35px;
     }
+
+    .foot {
+        margin-top: 310px;
+    }
+
     footer {
         height: 85px;
         margin-top: 87px;
